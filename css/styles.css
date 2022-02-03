@@ -15,7 +15,7 @@ body {
 }
 
 .logo {
-  background-image: url('logo.png');
+  background-image: url('/logo.png');
   height: 50px;
   width: 50px;
 }
