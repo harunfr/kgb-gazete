@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patates Baski 3000</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"></div>
+      <h1>Patates Baski 3000</h1>
+    </div>
+    <div id="template-selectors"></div>
+    <button id="download">Fotografi Indir</button>
+    <div class="main">
+      <canvas id="canvas"></canvas>
+      <form class="tools">
+        <button class="add-text" >Yazi ekle</button>
+        <button id="add-avatar">Yazar PP ekle ⬇️</button>
+        <input type="text" id="avatar-input" placeholder="basinda u/ olmadan yazar adi gir" />
+        <label for="add-photo">Dosyadan Foto Ekle ⬅️ </label>
+        <input type="file" id="add-photo" />
+        <button id="add-url-photo">Url'den Foto Ekle ⬇️</button>
+        <input id='url-input' type="text" placeholder="Fotograf url">
+      </form>
+    </div>
+    <!-- <img crossorigin="anonymous" id="hidden" src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" alt=""> -->
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"
+    ></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
