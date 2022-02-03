@@ -1,4 +1,4 @@
-import templates from './meme-templates.js'
+import templates from './templates.js'
 const canvasDatas = {}
 let prevTemplate = templates[0]
 let pageCount = 1
@@ -62,7 +62,8 @@ async function addAvatar(e) {
 
   try {
     let response = await fetch(
-      `https://www.reddit.com/user/${avatarInput.value}/about.json`
+      `https://www.reddit.com/user/${avatarInput.value}/about.json`,
+      { mode: 'cors' }
     )
     let databank = await response.json()
     const encodedSrc = databank.data.icon_img || databank.data.snoovatar_img

@@ -1,4 +1,2 @@
-# Patates Baski 3000
+# kgb-gazete
 Patates Baski 3000
-
-[Canli](https://harunfr.github.io/patates-baski-3000/)
