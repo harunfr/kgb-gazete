@@ -198,8 +198,8 @@ function addImageToCanvas(src, scale, radius) {
   try {
   } catch (error) {}
   const imgElement = new Image()
-  imgElement.src = src
   imgElement.crossOrigin = 'anonymous'
+  imgElement.src = src + "?not-from-cache-please"
   imgElement.onerror = function () {
     alert(
       'Fotograf yuklenemedi!\n' +
