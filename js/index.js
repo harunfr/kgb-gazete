@@ -63,7 +63,12 @@ async function addAvatar(e) {
   try {
     let response = await fetch(
       `https://www.reddit.com/user/${avatarInput.value}/about.json`,
-      { mode: 'cors' }
+      { 
+        mode: 'cors',
+        headers: {
+          Access-Control-Allow-Origin: *
+        }
+      }
     )
     let databank = await response.json()
     const encodedSrc = databank.data.icon_img || databank.data.snoovatar_img
@@ -199,7 +204,7 @@ function addImageToCanvas(src, scale, radius) {
   } catch (error) {}
   const imgElement = new Image()
   imgElement.crossOrigin = 'anonymous'
-  imgElement.src = src + "?not-from-cache-please"
+  imgElement.src = src
   imgElement.onerror = function () {
     alert(
       'Fotograf yuklenemedi!\n' +
