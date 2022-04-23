@@ -66,7 +66,7 @@ async function addAvatar(e) {
       { 
         mode: 'cors',
         headers: {
-          Access-Control-Allow-Origin: *
+          
         }
       }
     )
