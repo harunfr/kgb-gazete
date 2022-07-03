@@ -16,17 +16,34 @@
     <div class="main">
       <canvas id="canvas"></canvas>
       <form class="tools">
-        <button class="add-text" >Yazi ekle</button>
-        <button id="add-avatar">Yazar PP ekle ⬇️</button>
-        <input type="text" id="avatar-input" placeholder="basinda u/ olmadan yazar adi gir" />
+        <div class="font-family-controls">
+          <label for="font-family-select">Yazi tipi: </label>
+          <select id="font-family-select">
+            <option value="Arial">Arial</option>
+            <option value="Courier">Courier</option>
+            <option value="Sans Serif">Sans Serif</option>
+            <option value="Serif">Serif</option>
+          </select>
+        </div>
+        
+        <div class="font-size-controls">
+          <p>Yazi Boyutu</p>
+          <button id="decrease-font-size-btn">A-</button>
+          <button id="increase-font-size-btn">A+</button>
+        </div>
+        <div class="font-weight-controls">
+          <p>Yazi Kalinligi</p>
+          <button id="decrease-font-weight-btn">-</button>
+          <button id="increase-font-weight-btn">+</button>
+        </div>
+        <button class="add-text">Yazi ekle</button>
+        <button class="remove-text">Yaziyi/Yazilari Sil</button>
         <label for="add-photo">Dosyadan Foto Ekle ⬅️ </label>
         <input type="file" id="add-photo" />
         <button id="add-url-photo">Url'den Foto Ekle ⬇️</button>
-        <input id='url-input' type="text" placeholder="Fotograf url">
+        <input id="url-input" type="text" placeholder="Fotograf url" />
       </form>
     </div>
-    <!-- <img crossorigin="anonymous" id="hidden" src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" alt=""> -->
-
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"

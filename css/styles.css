@@ -1,5 +1,5 @@
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #1b1b2f98;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@ body {
 }
 
 .logo {
-  background-image: url('https://raw.githubusercontent.com/harunfr/patates-baski-3000/main/logo.png');
+  background-image: url("https://raw.githubusercontent.com/harunfr/patates-baski-3000/main/logo.png");
   height: 50px;
   width: 50px;
 }
@@ -76,18 +76,18 @@ button:not(.selected-template):hover {
 .tools {
   /* border: 2px solid blueviolet; */
   display: grid;
-  grid-template-columns:1fr;
+  grid-template-columns: 1fr;
   row-gap: 20px;
   align-items: center;
   justify-items: center;
 }
 
-input[type='text'] {
+input[type="text"] {
   height: 20px;
   border-radius: 5px;
 }
 
-input[type='file'] {
+input[type="file"] {
   display: none;
   /* cursor: pointer;
   border: 3px solid greenyellow;
@@ -95,7 +95,7 @@ input[type='file'] {
   border-radius: 5px; */
 }
 
-label[for='add-photo'] {
+label[for="add-photo"] {
   color: #fff;
   margin-left: 30px;
   cursor: pointer;
@@ -109,3 +109,24 @@ label[for='add-photo'] {
 }
 
 /* Polish */
+
+.font-size-controls,
+.font-weight-controls {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+#decrease-font-size-btn {
+  font-size: 0.8rem;
+}
+
+#increase-font-size-btn {
+  font-size: 1.2rem;
+}
+
+.font-family-controls {
+  color: #fff;
+}
